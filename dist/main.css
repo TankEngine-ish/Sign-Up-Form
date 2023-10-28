@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bahiana&family=Orbit&display=swap");
 :root {
   --color-left: rgb(8, 8, 97);
   --color-right: white;
@@ -8,12 +9,11 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  font-family: "Orbit", sans-serif;
 }
 
-.content,
-.logo {
+.content {
   display: flex;
-  flex-flow: row wrap;
 }
 
 img {
@@ -21,8 +21,64 @@ img {
   height: 100vh;
 }
 
+.overlay-wrap {
+  gap: 1vw;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  transform: scale(0.5);
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 30px;
+  margin-top: 70px;
+}
+
 .title {
   position: absolute;
   top: 0;
-  margin-left: 30px;
+  margin-left: 200px;
+  margin-top: 100px;
+  font-size: 3.5rem;
+}
+
+.left-side {
+  text-align: center;
+}
+
+.right-side {
+  width: 60vw;
+  background-color: #239dce;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.dummy-text {
+  font-weight: 600;
+  width: 90%;
+  font-size: 1.9rem;
+  padding-left: 55px;
+}
+
+.form {
+  box-shadow: 0 10px 20px -4px rgb(146, 106, 106);
+  display: flex;
+  flex-flow: row wrap;
+  gap: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 55px;
+}
+
+.form-title {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */
