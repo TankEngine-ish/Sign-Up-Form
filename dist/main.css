@@ -81,4 +81,23 @@ svg {
   width: 100%;
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.log-in {
+  display: flex;
+  padding: 55px;
+}
+
+a:link {
+  padding: 40px;
+}
+
+button {
+  background-color: rgba(173, 140, 140, 0);
+  font-weight: 700;
+  font-size: 1.2em;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 10px 40px;
+  margin: 40px;
 }/*# sourceMappingURL=main.css.map */
