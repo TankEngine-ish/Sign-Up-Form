@@ -1,110 +1,142 @@
 @import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Orbit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Orbit&display=swap');
 
 :root {
-    --color-left: rgb(8, 8, 97);
-    // --text-color: 
-    --color-right: white;
+--color-left: rgb(8, 8, 97);
+// --text-color: 
+--color-right: white;
 }
 
 body {
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-    overflow: hidden;
-    font-family: 'Orbit', sans-serif;
+box-sizing: border-box;
+margin:0;
+padding:0;
+overflow: hidden;
+font-family: 'Orbit', sans-serif;
 }
 // 'overflow:hidden' prevents unnecessary scrollbar from appearing.
 
 .content {
-    display: flex;
-    // flex-flow: row wrap;
+display: flex;
+// flex-flow: row wrap;
 }
 
 img {
-    width:40vw;
-    height:100vh;
+width:40vw;
+height:100vh;
 }
 
 .overlay-wrap {
-    gap: 1vw;
-    padding: 15px 0;
-    background-color: rgba(0, 0, 0, 0.6); 
-    justify-content: center;
-    align-items: center;
-   
+gap: 1vw;
+padding: 15px 0;
+background-color: rgba(0, 0, 0, 0.6); 
+justify-content: center;
+align-items: center;
+
 }
 
 svg {
-    transform: scale(0.5); 
-    width: 200px;
-    height: 150px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left:30px;
-    margin-top:70px;
+transform: scale(0.5); 
+width: 200px;
+height: 150px;
+position: absolute;
+top: 0;
+left: 0;
+margin-left:30px;
+margin-top:70px;
 }
 
 .title {
-    position:absolute;
-    top:0;
-    margin-left:200px;
-    margin-top:100px;
-    font-size: 3.5rem;
+position:absolute;
+top:0;
+margin-left:200px;
+margin-top:100px;
+font-size: 3.5rem;
 }
 
 .left-side {
-    text-align: center;
+text-align: center;
 }
 
 .right-side{
-    width: 60vw;
-    background-color: #239dce;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+width: 60vw;
+background-color: #239dce;
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
 }
 
 .dummy-text{
-    font-weight: 600;
-    width: 90%;
-    font-size: 1.9rem;
-    padding-left:55px;
+font-weight: 600;
+width: 90%;
+font-size: 2.1rem;
+padding-left:55px;
+font-family: 'Barlow', sans-serif;
+padding-bottom:50px;
 }
 
 .form{
-    box-shadow: 0 10px 20px -4px rgb(146, 106, 106);
-    display: flex;
-    flex-flow: row wrap;
-    gap: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left:55px;
+box-shadow: 0 10px 20px -4px rgb(146, 106, 106);
+display: flex;
+flex-flow: row wrap;
+gap: 50px;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left:55px;
 }
 
+
 .form-title{
-    width: 100%;
-    font-size: 1.2rem;
-    font-weight: 500;
+width: 100%;
+font-size: 1.2rem;
+font-weight: 500;
 }
 
 .log-in {
-    display:flex;
-    padding:55px;
+margin-left:40px;
+padding-top:20px;
+
 }
 
 a:link {
-    padding:40px;
-    
-}
 
+margin-left:40px;
+padding-bottom:60px;
+font-weight: 400;
+text-decoration: none;
+font-weight: bolder;
+
+}
 
 button {
-background-color: rgba(173, 140, 140, 0);
-font-weight: 700;
-font-size: 1.2em;
-border: 2px solid;
-border-radius: 10px;
-padding: 10px 40px;
-margin: 40px;
+--c:  rgb(3, 3, 2); /* the color*/
+box-shadow: 0 0 0 .1em inset var(--c); 
+--_g: linear-gradient(var(--c) 0 0) no-repeat;
+background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+outline-offset: .1em;
+transition: background-size .4s, background-position 0s .4s;
+font-family: system-ui, sans-serif;
+font-size: 1.5rem;
+margin-left:40px;
+padding: 20px;
+border: none;
+margin-top:60px;
+color:white;
+
 }
+button:hover {
+--_p: 100%;
+cursor:pointer;
+transition: background-position .4s, background-size 0s;
+}
+
+button:active {
+box-shadow: 0 0 9e9q inset #0009; 
+color: #fff;
+}
+
