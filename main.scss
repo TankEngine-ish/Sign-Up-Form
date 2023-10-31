@@ -3,7 +3,6 @@
 
 :root {
 --color-left: rgb(8, 8, 97);
-// --text-color: 
 --color-right: white;
 }
 
@@ -18,7 +17,6 @@ font-family: 'Orbit', sans-serif;
 
 .content {
 display: flex;
-// flex-flow: row wrap;
 }
 
 img {
@@ -32,7 +30,6 @@ padding: 15px 0;
 background-color: rgba(0, 0, 0, 0.6); 
 justify-content: center;
 align-items: center;
-
 }
 
 svg {
@@ -99,7 +96,6 @@ padding-top:20px;
 }
 
 a:link {
-
 margin-left:40px;
 padding-bottom:60px;
 font-weight: 400;
